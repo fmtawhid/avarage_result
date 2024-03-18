@@ -127,23 +127,8 @@ def eight(request):
 
         result = n1 + n2 + n3 + n4 + n5 + n6 + n7 + n8
 
-        #gred calculate
-
-    def gradcal(result):
-        if result>=4.00:
-            print('A+')
-        elif result>=3.75:
-            print('A')
-        elif result>=3.50:
-            print('A-')
-        
-        else:
-            print('Fail')
-        
-    gread = gradcal(result)
-    context={
-        "result":result,
-        "gread":gread,
-    }
+        context={
+            "result":result,
+        }
 
     return render(request, '8th.html', context)
